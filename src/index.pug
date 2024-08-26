@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./dist/main.css")
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet")
+    title Bookshop
+    script(defer src="./dist/main.js")
+  body
+    header.header
+      .container
+        .header__wrap
+          .logo Bookshop
+          nav
+            ul.header-menu
+              li: a.header-item(href="#") books
+              li: a.header-item(href="#") audiobooks
+              li: a.header-item(href="#") Stationery & gifts
+              li: a.header-item(href="#") blog
+          .header-icons
+            button.icon-button(type="button"): img(src="../src/img/user.svg" alt="User")
+            button.icon-button(type="button"): img(src="../src/img/search.svg" alt="Search")
+            button.icon-button(type="button")
+              img(src="../src/img/shop bag.svg" alt="shop bag")
+              span.cart-count 0
+    main.main
+      section.promo-images
+        img.additional-image(src="../src/img/promo 1.png" alt="Image 4")
+        img.additional-image(src="../src/img/promo 2.png" alt="Image 5")
+      section.slider
+        .slides
+          img.slide(src="../src/img/slide1.png" alt="Slide 1")
+          img.slide(src="../src/img/slide2.png" alt="Slide 2")
+          img.slide(src="../src/img/slide3.png" alt="Slide 3")
+        .dots
+          span.dot
+          span.dot
+          span.dot
+      section.content-wrapper
+        nav.category-list
+          ul#category-list
+            li.active(data-category="Architecture") Architecture
+            li(data-category="Art & Fashion") Art & Fashion
+            li(data-category="Biography") Biography
+            li(data-category="Business") Business
+            li(data-category="Crafts & Hobbies") Crafts & Hobbies
+            li(data-category="Drama") Drama
+            li(data-category="Fiction") Fiction
+            li(data-category="Food & Drink") Food & Drink
+            li(data-category="Health & Wellbeing") Health & Wellbeing
+            li(data-category="History & Politics") History & Politics
+            li(data-category="Humor") Humor
+            li(data-category="Poetry") Poetry
+            li(data-category="Psychology") Psychology
+            li(data-category="Science") Science
+            li(data-category="Technology") Technology
+            li(data-category="Travel & Maps") Travel & Maps
+        .book-list#book-list
+      .load-more-container
+        button.hidden#load-more(type="button") Load more
+    script(type="module" src="./dist/main.js")

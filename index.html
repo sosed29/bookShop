@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="logo">Bookshop</div>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a class="header-item" href="#"><span>books</span></a></li>
+                        <li><a class="header-item" href="#">audiobooks</a></li>
+                        <li><a class="header-item" href="#">Stationery & gifts</a></li>
+                        <li><a class="header-item" href="#">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <button class="icon-button" type="button"><img src="./src/img/user.svg" alt="User"></button>
+                    <button class="icon-button" type="button"><img src="./src/img/search.svg" alt="Search"></button>
+                    <button class="icon-button" type="button"><img src="./src/img/shop bag.svg" alt="shop bag">
+                        <span class="cart-count">0</span> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="promo-images">
+            <img src="./src/img/promo 1.png" alt="Image 4" class="additional-image">
+            <img src="./src/img/promo 2.png" alt="Image 5" class="additional-image">
+        </section>
+        
+        <section class="slider">
+            <div class="slides">
+                <img src="./src/img/slide1.png" alt="Slide 1" class="slide">
+                <img src="./src/img/slide2.png" alt="Slide 2" class="slide">
+                <img src="./src/img/slide3.png" alt="Slide 3" class="slide">
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        
+        <section class="content-wrapper">
+            <nav class="category-list">
+                <ul id="category-list">
+                    <li class="active" data-category="Architecture">Architecture</li>
+                    <li data-category="Art & Fashion">Art & Fashion</li>
+                    <li data-category="Biography">Biography</li>
+                    <li data-category="Business">Business</li>
+                    <li data-category="Crafts & Hobbies">Crafts & Hobbies</li>
+                    <li data-category="Drama">Drama</li>
+                    <li data-category="Fiction">Fiction</li>
+                    <li data-category="Food & Drink">Food & Drink</li>
+                    <li data-category="Health & Wellbeing">Health & Wellbeing</li>
+                    <li data-category="History & Politics">History & Politics</li>
+                    <li data-category="Humor">Humor</li>
+                    <li data-category="Poetry">Poetry</li>
+                    <li data-category="Psychology">Psychology</li>
+                    <li data-category="Science">Science</li>
+                    <li data-category="Technology">Technology</li>
+                    <li data-category="Travel & Maps">Travel & Maps</li>
+                </ul>
+            </nav>
+            
+            <div class="book-list" id="book-list">
+               
+            </div>
+        </section>
+        
+        <div class="load-more-container">
+            <button id="load-more" class="hidden" type="button">Load more</button>
+        </div>
+    </main>
+
+    <script type="module" src="./dist/main.js"></script>
+</body>
+
+</html>
