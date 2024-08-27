@@ -1,7 +1,5 @@
 
 import "./style.scss";
-
-
 import { initSlider, currentSlide } from "./slider.js";
 import { initBookLoader, loadBooks, loadMoreBooks } from "./bookLoader.js";
 import { generateStars } from "./rating.js";

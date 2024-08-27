@@ -2,11 +2,10 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="./dist/main.css")
-    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet")
-    title Bookshop
-    script(defer src="./dist/main.js")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap", rel="stylesheet")
+    title bookshop
   body
     header.header
       .container
@@ -14,29 +13,38 @@ html(lang="en")
           .logo Bookshop
           nav
             ul.header-menu
-              li: a.header-item(href="#") books
-              li: a.header-item(href="#") audiobooks
-              li: a.header-item(href="#") Stationery & gifts
-              li: a.header-item(href="#") blog
+              li
+                a.header-item(href="#")
+                  span books
+              li
+                a.header-item(href="#") audiobooks
+              li
+                a.header-item(href="#") Stationery & gifts
+              li
+                a.header-item(href="#") blog
           .header-icons
-            button.icon-button(type="button"): img(src="../src/img/user.svg" alt="User")
-            button.icon-button(type="button"): img(src="../src/img/search.svg" alt="Search")
             button.icon-button(type="button")
-              img(src="../src/img/shop bag.svg" alt="shop bag")
+             img(src="../src/img/user.svg", alt="User")
+            button.icon-button(type="button")
+              img(src="../src/img/search.svg", alt="Search")
+            button.icon-button(type="button")
+              img(src="../src/img/shop bag.svg", alt="shop bag")
               span.cart-count 0
     main.main
       section.promo-images
-        img.additional-image(src="../src/img/promo 1.png" alt="Image 4")
-        img.additional-image(src="../src/img/promo 2.png" alt="Image 5")
+        img(src="../src/img/promo 1.png", alt="Image 4", class="additional-image")
+        img(src="../src/img/promo 2.png", alt="Image 5", class="additional-image")
+      
       section.slider
         .slides
-          img.slide(src="../src/img/slide1.png" alt="Slide 1")
-          img.slide(src="../src/img/slide2.png" alt="Slide 2")
-          img.slide(src="../src/img/slide3.png" alt="Slide 3")
+          img(src="../src/img/slide1.png", alt="Slide 1", class="slide")
+          img(src="../src/img/slide2.png", alt="Slide 2", class="slide")
+          img(src="../src/img/slide3.png", alt="Slide 3", class="slide")
         .dots
           span.dot
           span.dot
           span.dot
+      
       section.content-wrapper
         nav.category-list
           ul#category-list
@@ -57,6 +65,8 @@ html(lang="en")
             li(data-category="Technology") Technology
             li(data-category="Travel & Maps") Travel & Maps
         .book-list#book-list
+
       .load-more-container
-        button.hidden#load-more(type="button") Load more
-    script(type="module" src="./dist/main.js")
+        button#load-more.hidden(type="button") Load more
+
+    
